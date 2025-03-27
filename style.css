@@ -527,7 +527,9 @@ svg {
 }
 .form_right {
 }
-
+.mobil_img {
+    display: none;
+}
 .footer {
     padding: 65px 0;
     background-color: #0E1028;
@@ -671,6 +673,11 @@ svg {
     }
     .lang.mobile {
         display: block;
+        margin-top: 50px;
+    }
+    .logotype {
+        position: relative;
+        z-index: 22;
     }
     .nav_links {
         max-width: 100%;
@@ -680,19 +687,22 @@ svg {
         right: 0;
         height: 100vh;
         transform: translateY(-100%);
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #0E1028;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         transition: all 0.3s;
         z-index: 10;
         flex-direction: column;
         align-items: center;
-        justify-content: initial;
+        justify-content: center;
         gap: 40px;
         padding-right: 55px;
         padding-top: 40px;
         padding-bottom: 20px;
         padding-left: 20px;
+    }
+    .nav_link {
+        font-size: 25px;
     }
     .nav_links--active {
         transform: translateX(0);
@@ -703,14 +713,14 @@ svg {
     .header__nav-close {
         cursor: pointer;
         display: block;
-        height: 40px;
-        width: 40px;
+        height: 38px;
+        width: 38px;
         position: absolute;
         z-index: 11;
         right: 1rem;
-        top: 15px;
+        top: 24px;
       }
-    
+      
       .header__nav-close-line {
         display: block;
         width: 100%;
@@ -823,6 +833,7 @@ svg {
     }
     .header_all-btn {
         font-size: 20px;
+        
     }
     .footer_right-top-list {
         gap: 20px;
@@ -934,6 +945,10 @@ svg {
         font-size: 16px;
 
     }
+    .section_pay-all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .section_pay-title-4 {
         font-size: 20px;
         max-width: 700px;
@@ -967,7 +982,11 @@ svg {
     .form_left .header_all-btn {
         font-size: 18px;
         height: 50px;
-        max-width: 218px;
+        max-width: 448px;
+    }
+    .header_all-btn {
+        width: 100%;
+        max-width: 450px;
     }
     .footer_all {
         flex-direction: column;
@@ -976,9 +995,22 @@ svg {
         width: 100%;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 460px) {
     .section_big-two-technology  {
         flex-direction: column;
+    }
+    .header {
+        background: url(./img/fonMobil.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .form_all {
+        background: url(./img/fonMobil.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
     }
     .footer_right-bot {
         flex-direction: column;
@@ -1001,8 +1033,8 @@ svg {
         flex-direction: column;
     }
     .section_pay-title {
-        font-size: 22px;
-        max-width: 351px;
+        font-size: 30px;
+        max-width: 332px;
     }
     .section_discover-top {
         flex-direction: column;
@@ -1016,8 +1048,20 @@ svg {
         padding-bottom: 80px;
     }
     .title-3 {
-        font-size: 20px;
+        font-size: 30px;
         max-width: 430px;
+    }
+    .section_big-two-technology-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_big-two-technology-text {
+        font-size: 22px;
+    }
+    .title-6 {
+        font-size: 22px;
     }
     .section_big {
         padding-top: 60px;
@@ -1035,6 +1079,16 @@ svg {
         margin-bottom: 30px;
         margin-top: 30px;
     }
+    .mobil_img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 28px;
+        margin-top: 30px;
+    }
+    .lisection_big-top-item {
+        padding: 15px 20px;
+        font-size: 16px;
+        }
     .FAQ {
         padding: 65px 0;
     }
@@ -1042,12 +1096,28 @@ svg {
         font-size: 14px;
     }
     .FAQ-item-click p{
-        font-size: 14px;
+        font-size: 15px;
         max-width: 250px;
     }
     .FAQ-item-drop {
         font-size: 14px;
         max-width: 320px;
+    }
+    .form_left {
+        max-width: 450px;
+    }
+    .form_right {
+        max-width: 450px;
+    }
+    .form-inp {
+        max-width: 450px;
+    }
+    .footer_right-bot-left {
+        order: 2;
+    }
+    .lang_footer {
+        display: flex;
+        height: 30px;
     }
 }
 
