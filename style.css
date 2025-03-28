@@ -1050,6 +1050,9 @@ svg {
     .header_all {
         padding-bottom: 200px;
     }
+    .footer_all {
+        gap: 30px;
+        }
     .footer_right-top {
         
         order: 1;
