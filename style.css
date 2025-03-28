@@ -1001,6 +1001,11 @@ svg {
     .lang_footer {
         display: block;
     }
+    .section_discover-bot {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 @media (max-width: 460px) {
     .section_big-two-technology  {
@@ -1011,6 +1016,8 @@ svg {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        height: 100%;
+        min-height: 100vh;
     }
     .form_all {
         background: url(./img/fonMobil.png);
