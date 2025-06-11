@@ -96,7 +96,7 @@ body {
     
 }
 :root {
-    --color-default:#EBEAF0;
+    --color-default:#363636;
     --color-btn:linear-gradient(272.65deg, #950B12 2.78%, #E2373F 102.26%);
 }
 .body {
@@ -111,7 +111,7 @@ body {
     padding: 9px 70px;
 }
 .header {
-    background: url(./img/fon.png);
+    background: url(./img/fonG.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,19 +119,26 @@ body {
 }
 .nav {
     font-family: "Manrope", sans-serif;
-    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    background-color: #fff;
+}
+.nav_all {
+     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    width: 100%;
 }
 .nav_links {
     display: flex;
     align-items: center;
     gap: 40px;
+    
 }
 .nav_link {
     color: var(--color-default);
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
 }
 .lang {
@@ -184,20 +191,20 @@ body {
     max-width: 600px;
 }
 .title-5 {
-    color: #EBEAF0B2;
+    color: #141414CC;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
 }
 .title-1 {
-    color: var(--color-default);
+    color: #141414;
     margin-top: 16px;
     font-size: 97px;
     font-weight: 700;
     line-height: 91px;
 }
 .text {
-    color: var(--color-default);
+    color: #141414;
     margin-top: 16px;
     max-width: 460px;
     font-size: 18px;
@@ -206,12 +213,14 @@ body {
     background: var(--color-btn);
     margin-top: 54px;
     padding: 13px 55px;
-    height: 65px;
+    height: 60px;
     max-width: 313px;
-    font-size: 25px;
+    width: 100%;
+    font-size: 20px;
     color: white;
     font-weight: 600;
     transition: all 0.3s;
+    border-radius: 30px;
 }
 .header_all-btn:hover {
     opacity: .8;
@@ -220,7 +229,8 @@ body {
 .section_discover {
     padding-top: 100px;
     padding-bottom: 120px;
-    background: linear-gradient(180deg, #FFFFFF 0%, #D3D3D3 52.89%, #FFFFFF 100.18%);
+    background: linear-gradient(180deg, #FFFFFF 0%, #E2E5F5 52.89%, #FFFFFF 100.18%);
+
 }
 
 .section_discover-top {
@@ -270,12 +280,10 @@ body {
 }
 
 .section_pay {
-    padding-top: 70px;
-    padding-bottom: 40px;
-    background: url(./img/FonTwo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 75px;
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, #515AC1 0%, #303678 100%);
+    border-radius: 75px;
 }
 .section_pay-title {
     font-weight: 600;
